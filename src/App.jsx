@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 import './App.css'
-import { AppContext } from './context/ContextApi'
+import { AppContext } from './context/ContextApiOne'
 import Feed from './components/Feed'
 import Header from './components/Header'
 import LeftNav from './components/LeftNav'
@@ -22,7 +22,7 @@ function App () {
     <AppContext>
             <BrowserRouter>
                 <div className="flex flex-col h-full">
-                    <Header />
+                    <Header />  
                     <Routes>
                         <Route path="/" exact element={<Feed />} />
                         <Route
